@@ -1,0 +1,10 @@
+<form action="/show_team" method="POST">
+    <p>Users:</p>
+        <%@teams.each do |t|%>
+            <p><%=t.name</p> %>
+        <%end%>
+    <br>
+    <label for="teamname">Team name:</label>
+        <input type="text" name="name" id="teamname">
+        <input type="submit" value="Send">
+</form>
